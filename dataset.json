@@ -4,7 +4,7 @@
       "tag": "greeting",
       "patterns": [
         "Hi",
-        "Hey",
+        "I need help",
         "How are you",
         "Is anyone there?",
         "Hello",
@@ -12,7 +12,7 @@
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
+        "Hello",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
@@ -28,56 +28,113 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
-      "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
-      ],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Happy to help!", "Any time!", "My pleasure"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "unable to log into ctc",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "I can't log into my ctclink account",
+        "unable to log in to ctc"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Please make sure that you have already activated your ctclink account, otherwise try to rest password or contact us"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "activate ctc",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "Can you show me how to activate ctc",
+        "I need help to activate my ctclink account"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Yes of course! Please follow the guides on this spreadsheet to activate your ctclink account"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "ctc verification code",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "I can't receive the verification code for ctc link to do a password reset",
+        "I am supposed to receive the verification code in text message for ctc link but i am not receiving it",
+        "I am supposed to receive the verification code in email for ctc link but i am not receiving it"
+
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "If you are not receiving verification code for ctclink, that means you have not set up MFA before, please visit us for assistance"
+      ]
+    },
+    {
+      "tag": "email log in",
+      "patterns": [
+        "I can't log in to my student email",
+        "I a new student and was given a temporary password to log in to my email but it is not working"
+      ],
+      "responses": [
+        "For new student, please log in using CTCDDMMYY as temporary password, proceed to set up a new password that is at least 12 characters long"
+      ]
+    },
+    {
+      "tag": "microsoft authenticator app",
+      "patterns": [
+        "I need help to log in to my student email because my authenticator app is not working",
+        "I just got a new phone and my microsoft authenticator app is not working",
+        "I just changed a new phone and my microsoft authenticator app is not working",
+        "I just got a new phone number and my microsoft authenticator app is not working",
+        "I just changed a new phone number and my microsoft authenticator app is not working",
+        "I cant get the code for microsoft authenticator"
+      ],
+      "responses": [
+        "Please vist us to reset MFA and set up Microsoft authenticator app again"
+      ]
+    },
+    {
+      "tag": "find ctclink id",
+      "patterns": [
+        "I forgot my ctc link id",
+        "What is my ctc link id",
+        "How to find my ctc link id",
+        "I want to look up my ctc link id",
+        "I want to know my ctc link id"
+      ],
+      "responses": [
+        "Unfortunately, there is no way for you to self look up ctclink id, please visit us for assistance"
+      ]
+    },
+    {
+      "tag": "find student email",
+      "patterns": [
+        "I forgot what is my student email",
+        "I want to find my student email",
+        "I want to know my student email",
+        "How to find my student email"
+      ],
+      "responses": [
+        "To find you student email, please use the email look up tool"
+      ]
+    },
+    {
+      "tag": "general password reset",
+      "patterns": [
+        "I need help to reset my password",
+        "I want to reset my password",
+        "I want to change my password",
+        "I can't change my password",
+        "I can't reset my password"
+      ],
+      "responses": [
+        "Please be more specific in your issue and state whether you need help to reset password for ctclink, student email, or canvas"
+      ]
+    },
+    {
+      "tag": "canvas",
+      "patterns": [
+        "I cant log in to canvas",
+        "My canvas is not working"
+      ],
+      "responses": [
+        "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvase, please contact e-learning, otherwise visit us for assistance "
       ]
     }
   ]
