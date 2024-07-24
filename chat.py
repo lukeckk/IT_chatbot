@@ -23,16 +23,11 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-
 # name the bot
 bot_name = "IT Helper"
-print("Let's chat! type 'quit' to exit")
-while True:
-    sentence = input('You: ')
-    if sentence == "quit":
-        break
 
-    sentence = tokenize(sentence)   #tokenize user's input
+def get_response(msg):
+    sentence = tokenize(msg)   #tokenize user's input
     x = bag_of_words(sentence, all_words)   # use bag_of_Words for sentence and all_words
     x = x.reshape(1, x.shape[0])    # reshape it to 1 row, 0 column
     x = torch.from_numpy(x)      # covert  type because bag_of_words returns numpy array
@@ -48,6 +43,16 @@ while True:
     if prob.item() > 0.75:
         for data in dataset["intents"]:
             if tag == data["tag"]:
-                print(f'{bot_name}: {random.choice(data["responses"])}')     # generate random response from each tag
+                return random.choice(data["responses"])
     else:
-        print(f'{bot_name}: I do not understand...')
+        return "I do not understand..."
+
+if __name__ == "__main__":
+    print("Let's chat! type 'quit' to exit")
+    while True:
+        sentence = input('You: ')
+        if sentence == "quit":
+            break
+
+        resp = get_response(sentence)
+        print(resp)

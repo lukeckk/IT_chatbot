@@ -69,6 +69,7 @@
       "tag": "email log in",
       "patterns": [
         "I can't log in to my student email",
+        "I can't log into my student email",
         "I a new student and was given a temporary password to log in to my email but it is not working"
       ],
       "responses": [
