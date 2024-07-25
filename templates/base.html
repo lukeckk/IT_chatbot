@@ -6,9 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Welcome to IT Helper</h1>
+    <div class="container">
+        <div class="chatbox__support">
+            <div class="chatbox__messages">
+                    <h2>Message area</h2>
+                    <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+    </div>
 
+
+
+    <script rel="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

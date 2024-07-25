@@ -9,10 +9,10 @@ def index_get():
 
 @app.post("/predict")
 def predict():
-    text = request.get_json().get("message")
+    text = request.get_json().get("message")       # message retrieves from msg1 in app.js
     # to do : check if text is valid
     response = get_response(text)
-    message = {"answer": response}
+    message = {"answer": response}      # answer is also from js
     return jsonify(message)
 
 if __name__ == "__main__":

@@ -37,7 +37,8 @@
       "tag": "unable to log into ctc",
       "patterns": [
         "I can't log into my ctclink account",
-        "unable to log in to ctc"
+        "unable to log in to ctc link",
+        "cant log in to ctc link"
       ],
       "responses": [
         "Please make sure that you have already activated your ctclink account, otherwise try to rest password or contact us"

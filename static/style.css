@@ -1,0 +1,35 @@
+.container{
+    background-color: #ff9b9b;
+}
+
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item--visitor {
+    margin-left: auto;
+}
+
+.messages__item--operator {
+    margin-right: auto;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: royalblue;
+    color: white;
+}
+
+.messages__item--visitor {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: green;
+    color: white;
+}
+
