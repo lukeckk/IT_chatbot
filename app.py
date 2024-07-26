@@ -1,11 +1,25 @@
 from flask import Flask, render_template, request, jsonify
 from chat import get_response
+import requests
+from bs4 import BeautifulSoup
+
 
 app = Flask(__name__)
 
 @app.get("/")
 def index_get():
-    return render_template("base.html")
+    url = "https://www.greenriver.edu/va/"
+    response = requests.get(url)
+    contents = response.text
+
+    # Parse the HTML using BeautifulSoup
+    soup = BeautifulSoup(contents, "html.parser")
+
+    # Select the second .card-body element
+    card_bodies = soup.select(".card-body")
+    second_card_body = card_bodies[1]
+
+    return render_template("base.html", second_card_body=second_card_body)
 
 @app.post("/predict")
 def predict():
@@ -17,3 +31,6 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+

@@ -4,11 +4,8 @@
       "tag": "greeting",
       "patterns": [
         "Hi",
-        "I need help",
         "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "Hello"
       ],
       "responses": [
         "Hey :-)",
@@ -137,6 +134,16 @@
       ],
       "responses": [
         "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvase, please contact e-learning, otherwise visit us for assistance "
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "I need help please",
+        "please help me"
+      ],
+      "responses": [
+        "Sure, what can I do for you? Please describe the problem."
       ]
     }
   ]

@@ -1,14 +1,82 @@
-.container{
-    background-color: #ff9b9b;
+@import url(https://use.typekit.net/xkh2ici.css);@font-face {
+    font-family: BigNoodleTitling;
+    src: url(font/bignoodletitling.eot) format("eot"),url(font/bignoodletitling.woff) format("woff"),url(font/big_noodle_titling.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.container {
+    /*background-color: #ff9b9b;*/
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding: 70px 40px 40px 40px;
+    height: 100%;
+}
+
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: #2c882b;
+}
+
+.chatbox__header {
+    /*background: var(--primaryGradient);*/
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px 20px
+    /*box-shadow: var(--primaryBoxShadow);*/
+}
+
+.chatbox__heading--header, .chatbox__description--header {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.chatbox__support {
+    background: #f9f9f9;
+    height: 700px;
+    width: 700px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    border: 4px solid #2c882b;
+    display: flex;
+    flex-direction: column;
 }
 
 .chatbox__messages {
-    margin-top: auto;
+    flex: 1;
     display: flex;
-    overflow-y: scroll;
+    overflow-y: auto;
     flex-direction: column-reverse;
+    padding: 0 20px;
 }
 
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: #F3F4F6;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1); /* Optional for visual separation */
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+/* Other styles remain unchanged */
 .messages__item--visitor {
     margin-left: auto;
 }
@@ -21,7 +89,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: royalblue;
+    background: #2c882b;
     color: white;
 }
 
@@ -29,7 +97,60 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: green;
-    color: white;
+    background: #E0E0E0;
+    color: black;
 }
 
+.messages__item {
+    margin-top: 10px;
+    /*background: #E0E0E0;*/
+    padding: 8px 12px;
+    max-width: 70%;
+}
+
+header#templateHeader a {
+    display: inline-block;
+    width: 250px;
+    max-height: 94px;
+    padding: 9px 60px;
+    background: #2c882b;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+
+header#templateHeader a img {
+    width: 100%;
+    display: inline;
+}
+
+header#templateHeader h1 {
+    display: inline-block;
+    font-family: BigNoodleTitling;
+    font-size: 52.8px;
+    margin: 0;
+    font-weight: 100;
+    color: #707070;
+    border-bottom: 4px solid #2c882b;
+    vertical-align: bottom;
+    line-height: normal;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.second-card-body a {
+    color: #2c882b;
+    text-decoration: none;
+}
