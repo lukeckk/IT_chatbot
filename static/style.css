@@ -10,8 +10,8 @@
     display: flex;
     /*justify-content: center;*/
     /*align-items: center;*/
-    padding: 70px 40px 40px 40px;
-    height: 100%;
+    /*padding-top: 40px;*/
+    /*height: 100%;*/
 }
 
 .chatbox__header {
@@ -154,3 +154,57 @@ body {
     color: #2c882b;
     text-decoration: none;
 }
+
+.second-card-body h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.second-card-body a.cta-1 {
+    border: 1px solid #545454;
+    padding: 10px 25px;
+    font-size: 1rem;
+}
+.second-card-body a.cta-1:hover {
+    background-color: #2c882b;
+    color: white;
+}
+
+.big-search {
+    text-align: center;
+}
+
+#search-form {
+    height: 50px;
+    font-size: 14px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 2px solid #2c882b;
+    box-shadow: none;
+    -webkit-appearance: none;
+    width: 400px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 16px;
+    /*border-radius: 20px;*/
+}
+
+button:hover {
+    background-color: #2c882b;
+    color: white;
+}
+
+.menu {
+    text-align: right;
+}
+
+
