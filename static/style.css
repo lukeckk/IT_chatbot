@@ -57,7 +57,7 @@
     flex: 1;
     display: flex;
     overflow-y: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 0 20px;
 }
 
@@ -81,6 +81,11 @@
     padding: 10px 10px;
     border-radius: 30px;
     text-align: left;
+}
+
+.typing-indicator img {
+    width: 60px;
+    height: 60px;
 }
 
 /* Other styles remain unchanged */
