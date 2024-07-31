@@ -27,7 +27,6 @@
                         <a href="https://egator.greenriver.edu/">CANVAS</a>
                         <a href="https://outlook.com/">STUDENT EMAIL</a>
                         <a href="https://my.greenriver.edu/lookup">STUDENT EMAIL LOOKUP</a>
-
                     </div>
                 </div>
             </div>
@@ -39,47 +38,47 @@
     <br>
 
     <div class="container">
-        <div class="chatbox__support col-6">
-            <div class="chatbox__header">
-                <div class="chatbox__content--header">
-                    <h1 class="chatbox__heading--header">Chat support</h1>
-                    <p class="chatbox__description--header">Hi. I am the IT Student Helper. How can I assist you today?</p>
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__content--header">
+                            <h1 class="chatbox__heading--header">Chat support</h1>
+                            <p class="chatbox__description--header">Hi. I am the IT Student Helper. How can I assist you today?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <div></div>
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Write a message...">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
                 </div>
             </div>
-            <div class="chatbox__messages">
-                <div></div>
-            </div>
-            <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
-        </div>
 
-        <div class="">
-        </div>
-
-        <div class="container-right col-6">
-            <div class="big-search">
-                <div id="search">
-                    <form action="https://www.greenriver.edu/search">
-                        <label class="sr-only" for="search-form"></label>
-                        <input resultsUrl="search.php" type="search" id="search-form" name="q" value="" placeholder="Search..." />
-                        <button type="submit" id="btnSearch"><span class="sr-only">Search</span></button>
-                    </form>
+            <div class="col-lg-6 col-12 mb-4">
+                <div class="container-right">
+                    <div class="big-search">
+                        <div id="search">
+                            <form action="https://www.greenriver.edu/search">
+                                <label class="sr-only" for="search-form"></label>
+                                <input resultsUrl="search.php" type="search" id="search-form" name="q" value="" placeholder="Search..." />
+                                <button type="submit" id="btnSearch"><span class="sr-only">Search</span></button>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="second-card-body">
+                        {{ second_card_body|safe }}
+                    </div>
                 </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="second-card-body">
-                {{ second_card_body|safe }}
             </div>
         </div>
     </div>
-
-
-
 
     <script rel="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>

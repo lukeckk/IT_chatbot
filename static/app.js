@@ -56,7 +56,7 @@ class Chatbox {
             }).finally(() => {
                 this.hideTypingIndicator(chatbox);
             });
-        }, 1000); // Show typing GIF for 2 seconds
+        }, 500); // Show typing GIF for 2 seconds
     }
 
     showTypingIndicator(chatbox) {
