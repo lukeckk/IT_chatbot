@@ -8,10 +8,7 @@
         "Hello"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there! Welcome to the IT Student Helpdesk, I am the IT Student Helper Bot, how may I assist you today? "
       ]
     },
     {
@@ -25,96 +22,106 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "patterns": ["Thanks", "Thank you", "Thanks a lot!"],
       "responses": [
         "Happy to help!", "Any time!", "My pleasure"
       ]
     },
     {
-      "tag": "unable to log into ctc",
+      "tag": "Unable to log into ctc",
       "patterns": [
         "I can't log into my ctclink account",
         "unable to log in to ctc link",
         "cant log in to ctc link"
       ],
       "responses": [
-        "Please make sure that you have already activated your ctclink account, otherwise try to rest password or contact us"
+        "Please make sure that you have already activated your ctclink account, else you may reset password or visit us for assistance."
       ]
     },
     {
-      "tag": "activate ctc",
+      "tag": "Ctclink activation",
       "patterns": [
-        "Can you show me how to activate ctc",
-        "I need help to activate my ctclink account"
+        "can you show me how to activate ctc",
+        "I need help to activate my ctclink account",
+        "how to activate ctc link account",
+        "ctclink activation",
+        "i want to activate my ctc link account"
       ],
       "responses": [
-        "Yes of course! Please follow the guides on this spreadsheet to activate your ctclink account"
+        "To activate your Ctclink account, please go to the Quicklinks section on top right of the page, click on 'Ctclink Activation Guide' and follow the instructions."
       ]
     },
     {
-      "tag": "ctc verification code",
+      "tag": "Ctclink MFA",
       "patterns": [
         "I can't receive the verification code for ctc link to do a password reset",
         "I am supposed to receive the verification code in text message for ctc link but i am not receiving it",
         "I am supposed to receive the verification code in email for ctc link but i am not receiving it"
-
       ],
       "responses": [
-        "If you are not receiving verification code for ctclink, that means you have not set up MFA before, please visit us for assistance"
+        "If you are not receiving verification code for Ctclink, It could mean that you have yet to set up MFA before or your MFA needs to be reset. Please visit us for assistance."
       ]
     },
     {
-      "tag": "email log in",
+      "tag": "Email log in",
       "patterns": [
         "I can't log in to my student email",
         "I can't log into my student email",
-        "I a new student and was given a temporary password to log in to my email but it is not working"
+        "Im a new student and was given a temporary password to log in to my email but it is not working"
       ],
       "responses": [
-        "For new student, please log in using CTCDDMMYY as temporary password, proceed to set up a new password that is at least 12 characters long"
+        "If you are a new student, please log in using temporary password ( 9-digit Ctclink id followed by 6-digit date of birth in MMDDYY format), then proceed to set up a new password that is at least 12 characters long."
       ]
     },
     {
-      "tag": "microsoft authenticator app",
+      "tag": "Microsoft authenticator app",
       "patterns": [
         "I need help to log in to my student email because my authenticator app is not working",
         "I just got a new phone and my microsoft authenticator app is not working",
         "I just changed a new phone and my microsoft authenticator app is not working",
         "I just got a new phone number and my microsoft authenticator app is not working",
         "I just changed a new phone number and my microsoft authenticator app is not working",
-        "I cant get the code for microsoft authenticator"
+        "I cant get the code for microsoft authenticator app",
+        "authenticator app is not working",
+        "authentication app is not working",
+        "microsoft authenticator app is not working",
+        "microsoft authentication app is not working",
+        "new phone",
+        "new phone number"
       ],
       "responses": [
-        "Please vist us to reset MFA and set up Microsoft authenticator app again"
+        "Please vist us for more assistance regarding your Microsoft authenticator app."
       ]
     },
     {
-      "tag": "find ctclink id",
+      "tag": "Ctclink Id Lookup",
       "patterns": [
-        "I forgot my ctc link id",
-        "What is my ctc link id",
-        "How to find my ctc link id",
-        "I want to look up my ctc link id",
-        "I want to know my ctc link id"
+        "i forgot my ctc link id",
+        "what is my ctc link id",
+        "how to find my ctc link id",
+        "i want to look up my ctc link id",
+        "i want to know my ctc link id",
+        "find ctc link id"
       ],
       "responses": [
-        "Unfortunately, there is no way for you to self look up ctclink id, please visit us for assistance"
+        "Unfortunately, there is no way for you to self look up Ctclink id. Please visit us for assistance."
       ]
     },
     {
-      "tag": "find student email",
+      "tag": "Student Email Lookup",
       "patterns": [
-        "I forgot what is my student email",
-        "I want to find my student email",
-        "I want to know my student email",
-        "How to find my student email"
+        "i forgot what is my student email",
+        "i want to find my student email",
+        "i want to know my student email",
+        "how to find my student email",
+        "find me my student email"
       ],
       "responses": [
-        "To find you student email, please use the email look up tool"
+        "To look up your student email, please use 'Student Email Lookup' located at the Quicklinks section on top right of the page."
       ]
     },
     {
-      "tag": "general password reset",
+      "tag": "Password reset",
       "patterns": [
         "I need help to reset my password",
         "I want to reset my password",
@@ -123,24 +130,98 @@
         "I can't reset my password"
       ],
       "responses": [
-        "Please be more specific in your issue and state whether you need help to reset password for ctclink, student email, or canvas"
+        "Please visit us for assistance."
       ]
     },
     {
-      "tag": "canvas",
+      "tag": "Canvas",
       "patterns": [
         "I cant log in to canvas",
         "My canvas is not working"
       ],
       "responses": [
-        "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvase, please contact e-learning, otherwise visit us for assistance "
+        "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvas, please contact e-learning at elearning@greenriver.edu regarding your issue. Otherwise, visit us for assistance."
       ]
     },
     {
-      "tag": "help",
+      "tag": "Running Start",
+      "patterns": [
+        "i want to know more about running start program",
+        "i am a running start student and i want to enroll in college",
+        "i have questions about running start"
+      ],
+      "responses": [
+        "Please reach out to the Running Start office regarding your issue. More information can be found here: https://www.greenriver.edu/students/academics/running-start/"
+      ]
+    },
+    {
+      "tag": "Financial Aid",
+      "patterns": [
+        "i have questions about financial aid",
+        "i want to apply for financial aid",
+        "i need help with financial aid issue",
+        "i am a veteran and i need help with financial aid"
+      ],
+      "responses": [
+        "Please reach out to the Financial Aid office regarding your issue. More information can be found here: https://www.greenriver.edu/students/pay-for-college/financial-aid/"
+      ]
+    },
+    {
+      "tag": "Tuition Fee",
+      "patterns": [
+        "i want to pay my tuition fee",
+        "how do i pay for tuition fee",
+        "tuition fee"
+      ],
+      "responses": [
+        "Please reach out to the Cashiers's Office regarding your issue. More information can be found here: https://www.greenriver.edu/campus/hours/"
+      ]
+    },
+    {
+      "tag": "Transcript",
+      "patterns": [
+        "i want to get my transcript",
+        "how do i get my transcript",
+        "transcript",
+        "official transcript",
+        "unofficial transcript"
+      ],
+      "responses": [
+        "Please visit Office of the Registrar to retrieve your official transcript. To retrive unofficial transcript, you may go to your Ctclink account."
+      ]
+    },
+    {
+      "tag": "Circulation Desk",
+      "patterns": [
+        "how can i borrow laptop",
+        "where can i borrow laptop",
+        "how can i borrow hotspot",
+        "where can i borrow hotspot",
+        "wifi hotspot",
+        "how can i borrow webcam",
+        "where can i borrow webcam"
+      ],
+      "responses": [
+        "Please visit the Circulation Desk located at Holman Library ground floor or email them at circdesk@greenriver.edu"
+      ]
+    },
+    {
+      "tag": "Temporary Password",
+      "patterns": [
+        "my temporary password is not working",
+        "i cant log in to email using my temporary password",
+        "i was given a temporary password but it is not working"
+      ],
+      "responses": [
+        "Please visit us for assistance."
+      ]
+    },
+    {
+      "tag": "Other",
       "patterns": [
         "I need help please",
-        "please help me"
+        "please help me",
+        "help"
       ],
       "responses": [
         "Sure, what can I do for you? Please describe the problem."
