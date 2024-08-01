@@ -1,0 +1,13 @@
+gspread==6.1.2
+oauth2client==4.1.3
+pytz @ file:///Users/ec2-user/ci_py311/pytz_1678318034461/work
+torch==2.2.2
+torchaudio==2.2.2
+torchvision==0.17.2
+requests~=2.32.3
+Flask~=2.2.2
+beautifulsoup4~=4.12.3
+pytz~=2024.1
+google-api-python-client~=2.138.0
+numpy~=1.26.4
+nltk~=3.8.1
