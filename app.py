@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.get("/")
 def index_get():
-    url = "https://www.greenriver.edu/va/"
+    url = "https://www.greenriver.edu/students/online-services/va.html"
     response = requests.get(url)
     contents = response.text
 

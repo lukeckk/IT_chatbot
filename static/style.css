@@ -163,6 +163,10 @@ body {
     height: 100vh;
 }
 
+.second-card-body{
+    padding-left: 60px;
+}
+
 .second-card-body a {
     color: #2c882b;
     text-decoration: none;
@@ -237,7 +241,7 @@ li {
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #2c882b;
+    background-color: #dc3545;
     color: white;
     padding: 29px;
     font-size: 16px;
@@ -280,5 +284,5 @@ li {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #2c882b;}
 
