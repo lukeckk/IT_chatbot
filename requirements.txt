@@ -1,6 +1,6 @@
 gspread==6.1.2
 oauth2client==4.1.3
-pytz @ file:///Users/ec2-user/ci_py311/pytz_1678318034461/work
+pytz==2023.3
 torch==2.2.2
 torchaudio==2.2.2
 torchvision==0.17.2
