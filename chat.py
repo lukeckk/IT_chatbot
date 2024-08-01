@@ -7,13 +7,14 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from datetime import datetime
 import pytz
+import os
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')   # tell pytorch to use cuda is available, else use cpu
 
 with open('dataset.json', 'r') as file:
     dataset = json.load(file)
 
-FILE = "data.pth"
+FILE = os.path.join(os.path.dirname(__file__), 'data.pth')
 data = torch.load(FILE) # open the pytorch file
 
 input_size = data["input_size"]
