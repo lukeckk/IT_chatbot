@@ -37,7 +37,7 @@ class Chatbox {
         this.showTypingIndicator(chatbox);
 
         setTimeout(() => {
-            fetch('http://127.0.0.1:5000/predict', {
+            fetch('https://grc-itchatbot.onrender.com/predict', {
                 method: 'POST',
                 body: JSON.stringify({ message: text1 }),
                 mode: 'cors',
