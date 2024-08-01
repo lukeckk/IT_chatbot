@@ -32,7 +32,10 @@
       "patterns": [
         "I can't log into my ctclink account",
         "unable to log in to ctc link",
-        "cant log in to ctc link"
+        "cant log in to ctc link",
+        "i cant log into ctc link",
+        "i cant log into ctc"
+
       ],
       "responses": [
         "Please make sure that you have already activated your ctclink account, else you may reset password or visit us for assistance."
