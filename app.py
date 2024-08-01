@@ -3,10 +3,13 @@ from chat import get_response
 import requests
 from bs4 import BeautifulSoup
 from flask_cors import CORS
+import nltk
 
 
 app = Flask(__name__)
 CORS(app)
+
+nltk.download('punkt')
 
 @app.get("/")
 def index_get():
@@ -25,11 +28,16 @@ def index_get():
 
 @app.post("/predict")
 def predict():
-    text = request.get_json().get("message")       # message retrieves from msg1 in app.js
-    # to do : check if text is valid
-    response = get_response(text)
-    message = {"answer": response}      # answer is also from js
-    return jsonify(message)
+    try:
+        text = request.get_json().get("message")
+        app.logger.info(f"Received message: {text}")
+        response = get_response(text)
+        app.logger.info(f"Generated response: {response}")
+        message = {"answer": response}
+        return jsonify(message)
+    except Exception as e:
+        app.logger.error(f"Error in /predict: {e}", exc_info=True)
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)

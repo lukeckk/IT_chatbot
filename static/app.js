@@ -45,15 +45,25 @@ class Chatbox {
                     'Content-Type': 'application/json'
                 },
             })
-            .then(r => r.json())
-            .then(r => {
-                let msg2 = { name: "IT Helper", message: r.answer };
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                let msg2 = { name: "IT Helper", message: data.answer };
                 this.messages.push(msg2);
                 this.updateChatText(chatbox);
-            }).catch((error) => {
+            })
+            .catch((error) => {
                 console.error('Error:', error);
                 this.updateChatText(chatbox);
-            }).finally(() => {
+            })
+            .finally(() => {
                 this.hideTypingIndicator(chatbox);
             });
         }, 500); // Show typing GIF for 2 seconds
