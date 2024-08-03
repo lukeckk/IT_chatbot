@@ -62,11 +62,7 @@
                 <div class="container-right">
                     <div class="big-search">
                         <div id="search">
-                            <form action="https://www.greenriver.edu/search">
-                                <label class="sr-only" for="search-form"></label>
-                                <input resultsUrl="search.php" type="search" id="search-form" name="q" value="" placeholder="Search..." />
-                                <button type="submit" id="btnSearch"><span class="sr-only">Search</span></button>
-                            </form>
+                            {{ form_html|safe }}
                         </div>
                     </div>
                     <br>

@@ -71,14 +71,14 @@ def get_response(msg):
                 new_issue = data["tag"]
                 found = False
                 for row_index, issue in enumerate(issue_values):
-                    if issue == new_issue and issue != "greeting" and issue != "goodbye" and sheet.cell(row_index + 1, date_column).value == date:
+                    if issue == new_issue and issue != "greeting" and issue != "thanks" and sheet.cell(row_index + 1, date_column).value == date:
                         found = True
                         current_number = int(sheet.cell(row_index + 1, number_column).value)
                         new_number = current_number + 1
                         sheet.update_cell(row_index + 1, number_column, str(new_number))
                         break
 
-                if found == False and new_issue != "greeting" and new_issue != "goodbye":
+                if found == False and new_issue != "greeting" and new_issue != "thanks":
                     # Find the next empty row
                     next_row = len(issue_values) + 1
                     for row in range(1, sheet.row_count + 1):
@@ -92,7 +92,7 @@ def get_response(msg):
                     issue_values.append(new_issue)
                 return random.choice(data["responses"])
     else:
-        return "Please visit us for assistance."
+        return "Sorry, I do not understand the question. Please be more specific with your issue, try using the search bar, or visit us for assistance. Thank you!"
 
 if __name__ == "__main__":
     print("Let's chat! type 'quit' to exit")

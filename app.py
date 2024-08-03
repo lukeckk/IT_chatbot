@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from flask_cors import CORS
 import nltk
+from scrape_form import scrape_form
 
 
 app = Flask(__name__)
@@ -24,7 +25,9 @@ def index_get():
     card_bodies = soup.select(".card-body")
     second_card_body = card_bodies[1]
 
-    return render_template("base.html", second_card_body=second_card_body)
+    form_html = scrape_form()
+
+    return render_template("base.html", second_card_body=second_card_body, form_html=form_html)
 
 @app.post("/predict")
 def predict():

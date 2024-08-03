@@ -102,6 +102,13 @@ class Chatbox {
         if (chatbox.querySelector('.typing-indicator')) {
             this.showTypingIndicator(chatbox);
         }
+
+        // Scroll to the bottom
+        this.scrollToBottom(chatmessage);
+    }
+
+    scrollToBottom(element) {
+        element.scrollTop = element.scrollHeight;
     }
 }
 
