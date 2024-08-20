@@ -95,10 +95,10 @@ def get_response(msg):
         return "Sorry, I do not understand the question. Please be more specific with your issue, try using the search bar, or visit us for assistance. Thank you!"
 
 if __name__ == "__main__":
-    print("Let's chat! type 'quit' to exit")
+    print("Let's chat! type 'quitquit' to exit")
     while True:
         sentence = input('You: ')
-        if sentence == "quit":
+        if sentence == "quitquit":
             break
 
         resp = get_response(sentence)
