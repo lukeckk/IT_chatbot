@@ -8,14 +8,14 @@
         "Hello"
       ],
       "responses": [
-        "Hi there! Welcome to the IT Student Helpdesk, I am the IT Student Helper Bot, how may I assist you today? "
+        "Hi there! Welcome to the IT Student Helpdesk, I am the GRC IT Student Helper Bot, how may I assist you today? "
       ]
     },
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "Thanks a lot!"],
       "responses": [
-        "Happy to help!", "Any time!", "My pleasure"
+        "Happy to help!", "Anytime!", "My pleasure"
       ]
     },
     {
@@ -84,7 +84,7 @@
         "new phone number"
       ],
       "responses": [
-        "Please vist us for more assistance regarding your Microsoft authenticator app."
+        "Please vist us for more assistance regarding your Microsoft authenticator app. Thank you!"
       ]
     },
     {
@@ -98,7 +98,7 @@
         "find ctc link id"
       ],
       "responses": [
-        "Unfortunately, there is no way for you to self look up Ctclink id. Please visit us for assistance."
+        "Unfortunately, there is no way for you to self look up Ctclink id. Please visit us for assistance. Thank you!"
       ]
     },
     {
@@ -142,7 +142,8 @@
       "patterns": [
         "i want to know more about running start program",
         "i am a running start student and i want to enroll in college",
-        "i have questions about running start"
+        "i have questions about running start",
+        "running start"
       ],
       "responses": [
         "Please reach out to the Running Start office regarding your issue. More information can be found here: https://www.greenriver.edu/students/academics/running-start/"
@@ -182,7 +183,7 @@
         "unofficial transcript"
       ],
       "responses": [
-        "Please visit Office of the Registrar to retrieve your official transcript. To retrive unofficial transcript, you may go to your Ctclink account."
+        "Please visit Office of the Registrar to retrieve your official transcript. To retrieve unofficial transcript, you may go to your Ctclink account."
       ]
     },
     {
@@ -208,7 +209,7 @@
         "i was given a temporary password but it is not working"
       ],
       "responses": [
-        "Please visit us for assistance."
+        "Please visit us for assistance regarding your issue. Thank you!"
       ]
     },
     {
