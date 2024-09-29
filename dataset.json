@@ -29,7 +29,7 @@
 
       ],
       "responses": [
-        "Please make sure that you have already activated your ctclink account, else you may reset password or visit us for assistance."
+        "Please make sure that you have already activated your ctclink account, else you may reset password or visit us on zoom or in person for assistance."
       ]
     },
     {
@@ -53,7 +53,7 @@
         "I am supposed to receive the verification code in email for ctc link but i am not receiving it"
       ],
       "responses": [
-        "If you are not receiving verification code for Ctclink, It could mean that you have yet to set up MFA before or your MFA needs to be reset. Please visit us for assistance."
+        "If you are not receiving verification code for Ctclink, It could mean that you have yet to set up MFA before or your MFA needs to be reset. Please visit us on zoom or in person for assistance."
       ]
     },
     {
@@ -84,7 +84,7 @@
         "new phone number"
       ],
       "responses": [
-        "Please vist us for more assistance regarding your Microsoft authenticator app. Thank you!"
+        "Please vist us on zoom or in person for more assistance regarding your Microsoft authenticator app issue. Thank you!"
       ]
     },
     {
@@ -98,7 +98,7 @@
         "find ctc link id"
       ],
       "responses": [
-        "Unfortunately, there is no way for you to self look up Ctclink id. Please visit us for assistance. Thank you!"
+        "Unfortunately, there is no way for you to self look up Ctclink id. Please visit us on zoom or in person for assistance. Thank you!"
       ]
     },
     {
@@ -124,7 +124,7 @@
         "I can't reset my password"
       ],
       "responses": [
-        "Please visit us for assistance."
+        "Please visit us on zoom or in person for assistance."
       ]
     },
     {
@@ -134,7 +134,7 @@
         "My canvas is not working"
       ],
       "responses": [
-        "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvas, please contact e-learning at elearning@greenriver.edu regarding your issue. Otherwise, visit us for assistance."
+        "Please log in to your student email to troubleshoot your issue, if you are able to log in to your email but not canvas, please contact e-learning at elearning@greenriver.edu regarding your issue. Otherwise, visit us on zoom or in person for assistance."
       ]
     },
     {
@@ -209,7 +209,7 @@
         "i was given a temporary password but it is not working"
       ],
       "responses": [
-        "Please visit us for assistance regarding your issue. Thank you!"
+        "Please visit us on zoom or in person for assistance regarding your issue. Thank you!"
       ]
     },
     {
