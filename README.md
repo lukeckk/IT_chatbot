@@ -53,9 +53,3 @@ The chatbot is live and accessible at:
 
 ---
 
-## Setup and Installation
-
-### Clone the Repository
-```bash
-git clone https://github.com/yourusername/it-support-chatbot.git
-cd it-support-chatbot
